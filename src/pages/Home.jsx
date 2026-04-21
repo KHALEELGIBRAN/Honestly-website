@@ -38,14 +38,14 @@ function Hero() {
                         a Google review?<br /></div>
                     <div className="comic-img">
                         {/* Save image as: src/assets/comic-1-leaving.png */}
-                        <img src="/src/assets/comic-1-leaving.png" alt="Customer leaving without reviewing" />
+                        <img src="/images/comic-1-leaving.png" alt="Customer leaving without reviewing" />
                     </div>
                 </div>
                 <div className="comic-panel">
                     <div className="comic-label">Now they can post one<br /><span className="comic-highlight">in just 3 taps.</span></div>
                     <div className="comic-img">
                         {/* Save image as: src/assets/comic-2-scanning.png */}
-                        <img src="/src/assets/comic-2-scanning.png" alt="Customer scanning QR card" />
+                        <img src="/images/comic-2-scanning.png" alt="Customer scanning QR card" />
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@ function HowItWorks() {
             title: 'Scan the QR card',
             desc: 'A printed card sits on your counter. Customer points their camera — it opens instantly in their browser. No app, no account, no friction.',
             tag: '2 seconds',
-            img: '/src/assets/how-step-1.png',
+            img: '/images/how-step-1.png',
             alt: 'Customer scanning QR card',
         },
         {
@@ -85,7 +85,7 @@ function HowItWorks() {
             title: 'Tap what stood out',
             desc: 'Simple chips — coffee, staff, ambience, food, speed, value. One tap selects. They can add a line in their own words, or skip straight to next.',
             tag: '10 seconds',
-            img: '/src/assets/how-step-2.png',
+            img: '/images/how-step-2.png',
             alt: 'Customer tapping chips on phone',
         },
         {
@@ -93,7 +93,7 @@ function HowItWorks() {
             title: 'AI writes it. Posted to Google.',
             desc: "AI generates a genuine, specific review from their selections. Sounds like a real person — because the experience was. One tap and it's live on your Google listing.",
             tag: 'Under 30 seconds total',
-            img: '/src/assets/how-step-3.png',
+            img: '/images/how-step-3.png',
             alt: 'Review posted to Google',
         },
     ]
