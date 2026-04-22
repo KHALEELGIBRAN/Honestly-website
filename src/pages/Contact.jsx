@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import './Contact.css'
 import { createClient } from '@supabase/supabase-js'
+import { FiMail, FiClock } from 'react-icons/fi'
+import { FaWhatsapp } from 'react-icons/fa'
 
 // Then add this function inside the component file, above the components:
 function useReveal() {
@@ -34,6 +36,27 @@ export default function Contact() {
         import.meta.env.VITE_SUPABASE_ANON_KEY
     )
 
+    const methods = [
+        {
+            icon: <FiMail />,
+            label: 'Email',
+            value: 'hello@honestly.co.in',
+            href: 'mailto:hello@honestly.co.in'
+        },
+        {
+            icon: <FaWhatsapp />,
+            label: 'WhatsApp',
+            value: '+91 98765 43210',
+            href: 'https://wa.me/919876543210'
+        },
+        {
+            icon: <FiClock />,
+            label: 'Response time',
+            value: 'Within 24 hours',
+            href: null
+        }
+    ]
+
     const handleSubmit = async e => {
         e.preventDefault()
         setSubmitting(true)
@@ -60,7 +83,7 @@ export default function Contact() {
                 <div className="container">
                     <div className="contact-eyebrow reveal">Get in touch</div>
                     <h1 className="contact-title reveal">Let's talk about<br /><em>your business.</em></h1>
-                    <p className="contact-sub reveal">Whether you're a solo shop owner or running a chain of outlets — we're happy to answer questions, walk you through the product, or put together a custom plan.</p>
+                    <p className="contact-sub reveal">Whether you're a solo shop owner or running a chain of outlets - we're happy to answer questions, walk you through the product, or put together a custom plan.</p>
                 </div>
             </div>
 
@@ -120,12 +143,20 @@ export default function Contact() {
                             <div className="info-block">
                                 <div className="info-title">Get in touch</div>
                                 <div className="contact-methods">
-                                    {[{ icon: '✉', label: 'Email', value: 'hello@honestly.co.in', href: 'mailto:hello@honestly.co.in' }, { icon: '📱', label: 'WhatsApp', value: '+91 98765 43210', href: 'https://wa.me/919876543210' }, { icon: '🕐', label: 'Response time', value: 'Within 24 hours', href: null }].map(m => (
+                                    {methods.map(m => (
                                         <div key={m.label} className="contact-method">
                                             <div className="method-icon">{m.icon}</div>
+
                                             <div>
                                                 <div className="method-label">{m.label}</div>
-                                                {m.href ? <a href={m.href} className="method-value">{m.value}</a> : <div className="method-value">{m.value}</div>}
+
+                                                {m.href ? (
+                                                    <a href={m.href} className="method-value">
+                                                        {m.value}
+                                                    </a>
+                                                ) : (
+                                                    <div className="method-value">{m.value}</div>
+                                                )}
                                             </div>
                                         </div>
                                     ))}
@@ -139,13 +170,13 @@ export default function Contact() {
                                 <div className="info-title">Support</div>
                                 <div className="info-text">Already a customer? Email us at <a href="mailto:hello@honestly.co.in" className="inline-link">hello@honestly.co.in</a> or message us on WhatsApp for the fastest response.</div>
                             </div>
-                            <div className="contact-location">
+                            {/* <div className="contact-location">
                                 <span>📍</span>
                                 <div>
                                     <div className="location-city">Bangalore, India</div>
                                     <div className="location-sub">Built for Indian businesses</div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

@@ -25,7 +25,7 @@ function useReveal() {
 function Hero() {
     return (
         <section className="hero">
-            <div className="hero-eyebrow">AI-powered Google reviews for Indian businesses</div>
+            <div className="hero-eyebrow">AI-powered Google reviews for businesses</div>
             {/* <h1 className="hero-title">
                 <span className="problem">Your customers love you.</span><br />
                 <em>They just never say so.</em>
@@ -35,7 +35,7 @@ function Hero() {
             <div className="hero-comics">
                 <div className="comic-panel">
                     <div className="comic-label">Customers not posting
-                        a Google review?<br /></div>
+                        <br />a Google review?</div>
                     <div className="comic-img">
                         {/* Save image as: src/assets/comic-1-leaving.png */}
                         <img src="/images/comic-1-leaving.png" alt="Customer leaving without reviewing" />
@@ -61,7 +61,7 @@ function Hero() {
             </div>
 
             <div className="hero-actions">
-                <a href={`${VENDOR}/signup`} className="btn-white">Try for ₹499 →</a>
+                <a href={`${VENDOR}/signup`} className="btn-white">Try for ₹499</a>
                 <a href={`${VENDOR}/login`} className="btn-ghost btn-ghost-outlined">Log in</a>
             </div>
 
@@ -75,7 +75,7 @@ function HowItWorks() {
         {
             num: '01',
             title: 'Scan the QR card',
-            desc: 'A printed card sits on your counter. Customer points their camera — it opens instantly in their browser. No app, no account, no friction.',
+            desc: 'A printed card sits on your counter. Customer points their camera, it opens instantly in their browser. No app, no account, no friction.',
             tag: '2 seconds',
             img: '/images/how-step-1.png',
             alt: 'Customer scanning QR card',
@@ -83,16 +83,16 @@ function HowItWorks() {
         {
             num: '02',
             title: 'Tap what stood out',
-            desc: 'Simple chips — coffee, staff, ambience, food, speed, value. One tap selects. They can add a line in their own words, or skip straight to next.',
-            tag: '10 seconds',
+            desc: 'Simple button - coffee, staff, ambience, food, speed, value. One tap selects. They can add a line in their own words, or skip straight to next.',
+            tag: '2 seconds',
             img: '/images/how-step-2.png',
             alt: 'Customer tapping chips on phone',
         },
         {
             num: '03',
             title: 'AI writes it. Posted to Google.',
-            desc: "AI generates a genuine, specific review from their selections. Sounds like a real person — because the experience was. One tap and it's live on your Google listing.",
-            tag: 'Under 30 seconds total',
+            desc: "AI generates a genuine, specific review from their selections. Sounds like a real person because the experience was. One tap and it's live on your Google listing.",
+            tag: 'Under 5 seconds total',
             img: '/images/how-step-3.png',
             alt: 'Review posted to Google',
         },
@@ -137,14 +137,14 @@ function PhoneDemo() {
                     <h2 className="demo-title">This is what your<br />customers <em>see.</em></h2>
                     <p className="demo-desc">Clean. Fast. Warm. Designed to feel like a natural conversation — not a feedback form. Your shop name at the top. Honestly stays in the background.</p>
                     <ul className="demo-steps">
-                        {[['Works on any phone', '— no app download, no account'], ['Your shop name at the top', '— feels native to your business'], ['Every review is real', '— from a real visit, a real experience'], ["Posts to your Google listing", "— one tap, it's live"]].map(([b, r]) => (
+                        {[['Works on any phone', ' - no app download, no account'], ['Your shop name at the top', ' - feels native to your business'], ['Every review is real', ' - from a real visit, a real experience'], ["Posts to your Google listing", " - one tap, it's live"]].map(([b, r]) => (
                             <li key={b} className="demo-step">
                                 <div className="demo-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg></div>
                                 <span className="demo-step-text"><strong>{b}</strong>{r}</span>
                             </li>
                         ))}
                     </ul>
-                    <a href={`${VENDOR}/signup`} className="demo-cta">Try for ₹499 →</a>
+                    <a href={`${VENDOR}/signup`} className="demo-cta">Try for ₹499 </a>
                 </div>
                 <div className="demo-right reveal">
                     <div className="phone-mockup">
@@ -165,7 +165,7 @@ function PhoneDemo() {
                                     ))}
                                 </div>
                                 <div className="phone-review-box">
-                                    <div className="phone-review-text">The coffee here is genuinely one of the best I've had in the city. The barista remembered my order — that kind of detail is rare anywhere.</div>
+                                    <div className="phone-review-text">The coffee here is genuinely one of the best I've had in the city. The barista remembered my order - that kind of detail is rare anywhere.</div>
                                     <div className="phone-review-stars">★★★★★</div>
                                 </div>
                                 <div className="phone-cta-btn">Post to Google Reviews →</div>
@@ -182,11 +182,11 @@ function PhoneDemo() {
 function Businesses() {
     const [open, setOpen] = useState(null)
     const items = [
-        { cat: 'Food & Beverage', name: 'Cafés & Restaurants', desc: 'The highest review-reading category in India. A 0.2 star difference between you and the café next door determines who gets the walk-in. Ratings are your most powerful marketing tool — and most visible customers never leave one.', examples: 'Cafés · Restaurants · Bakeries · Cloud kitchens · Juice bars · Dhaba · Food courts' },
-        { cat: 'Beauty & Wellness', name: 'Salons & Spas', desc: "First-time customers almost always check reviews before booking a salon or spa. Salons with 200+ reviews get automatic trust. Salons with 15 reviews get scrolled past — even when they're better.", examples: 'Hair salons · Spas · Nail studios · Barbershops · Wellness centres · Threading parlours' },
-        { cat: 'Healthcare', name: 'Clinics & Pharmacies', desc: 'Patients choosing between two nearby clinics almost always pick the one with better, more recent reviews. Trust is built review by review — and happy patients almost never think to write one unprompted.', examples: 'Dental clinics · General physicians · Pharmacies · Diagnostics · Eye care · Physiotherapy' },
+        { cat: 'Food & Beverage', name: 'Cafés & Restaurants', desc: 'The highest review-reading category in India. A 0.2 star difference between you and the café next door determines who gets the walk-in. Ratings are your most powerful marketing tool - and most visible customers never leave one.', examples: 'Cafés · Restaurants · Bakeries · Cloud kitchens · Juice bars · Dhaba · Food courts' },
+        { cat: 'Beauty & Wellness', name: 'Salons & Spas', desc: "First-time customers almost always check reviews before booking a salon or spa. Salons with 200+ reviews get automatic trust. Salons with 15 reviews get scrolled past - even when they're better.", examples: 'Hair salons · Spas · Nail studios · Barbershops · Wellness centres · Threading parlours' },
+        { cat: 'Healthcare', name: 'Clinics & Pharmacies', desc: 'Patients choosing between two nearby clinics almost always pick the one with better, more recent reviews. Trust is built review by review - and happy patients almost never think to write one unprompted.', examples: 'Dental clinics · General physicians · Pharmacies · Diagnostics · Eye care · Physiotherapy' },
         { cat: 'Fitness', name: 'Gyms & Studios', desc: 'New members research gyms before signing up. Reviews that mention equipment quality, cleanliness, and trainer approach are what convert a casual browse into a visit and a visit into a membership.', examples: 'Gyms · Yoga studios · CrossFit boxes · Dance academies · Pilates studios · Martial arts' },
-        { cat: 'Retail', name: 'Shops & Boutiques', desc: 'Retail discovery increasingly starts on Google Maps. A clothing boutique, electronics shop, or bookstore with more reviews ranks higher in local search — and looks more trustworthy when a customer is deciding between two options.', examples: 'Clothing · Electronics · Books · Home goods · Grocery · Specialty retail · Gift shops' },
+        { cat: 'Retail', name: 'Shops & Boutiques', desc: 'Retail discovery increasingly starts on Google Maps. A clothing boutique, electronics shop, or bookstore with more reviews ranks higher in local search - and looks more trustworthy when a customer is deciding between two options.', examples: 'Clothing · Electronics · Books · Home goods · Grocery · Specialty retail · Gift shops' },
         { cat: 'Automotive', name: 'Garages & Service Centres', desc: "Car owners are extremely review-conscious before trusting anyone with their vehicle. A garage with strong reviews about honest pricing and quality work earns customers for life.", examples: 'Car service centres · Bike workshops · Tyre shops · Auto accessories · Detailing' },
     ]
     return (
@@ -204,7 +204,7 @@ function Businesses() {
                                     <span className="biz-name">{b.name}</span>
                                 </div>
                                 <div className="biz-trigger-right">
-                                    <span className="biz-hint">{open === i ? 'Tap to close' : 'Tap to expand'}</span>
+                                    <span className="biz-hint">{open === i ? '' : ''}</span>
                                     <div className="biz-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19" />{open !== i && <line x1="5" y1="12" x2="19" y2="12" />}</svg></div>
                                 </div>
                             </button>
@@ -222,12 +222,12 @@ function Businesses() {
 
 function ReviewsMarquee() {
     const reviews = [
-        { stars: '★★★★★', text: "Came in for a trim, stayed for the experience. They actually listened. Left looking better than I expected.", author: 'Rahul K.', biz: 'The Barbershop' },
-        { stars: '★★★★★', text: "Dr. Mehta explained everything clearly and didn't rush the appointment. Dentists that don't make you feel judged are hard to find.", author: 'Ananya S.', biz: 'Clove Dental' },
-        { stars: '★★★★★', text: "Best gym I've been a member of. Equipment maintained, no waiting at peak hours, trainers who actually track progress.", author: 'Vikram T.', biz: 'FitLife Gym' },
-        { stars: '★★★★☆', text: "Food was excellent and portions generous. Service took a while but the ambience made it worth it. Will definitely be back.", author: 'Meera R.', biz: 'The Local Table' },
-        { stars: '★★★★★', text: "Walked in without an appointment and they fit me in. The facial was relaxing and products were high quality. Worth every rupee.", author: 'Deepa V.', biz: 'Glow Studio' },
-        { stars: '★★★★★', text: "Finally a pharmacy that explains what each medicine does. Staff are patient and never make you feel rushed.", author: 'Suresh M.', biz: 'MedPlus Pharmacy' },
+        { stars: '★★★★★', text: "Came in for a trim, stayed for the experience. They actually listened. Left looking better than I expected.", author: 'Rahul K.', biz: '' },
+        { stars: '★★★★★', text: "Dr. Mehta explained everything clearly and didn't rush the appointment. Dentists that don't make you feel judged are hard to find.", author: 'Ananya S.', biz: '' },
+        { stars: '★★★★★', text: "Best gym I've been a member of. Equipment maintained, no waiting at peak hours, trainers who actually track progress.", author: 'Vikram T.', biz: '' },
+        { stars: '★★★★☆', text: "Food was excellent and portions generous. Service took a while but the ambience made it worth it. Will definitely be back.", author: 'Meera R.', biz: '' },
+        { stars: '★★★★★', text: "Walked in without an appointment and they fit me in. The facial was relaxing and products were high quality. Worth every rupee.", author: 'Deepa V.', biz: '' },
+        { stars: '★★★★★', text: "Finally a pharmacy that explains what each medicine does. Staff are patient and never make you feel rushed.", author: 'Suresh M.', biz: '' },
     ]
     return (
         <div className="reviews-section">
@@ -252,9 +252,9 @@ function ReviewsMarquee() {
 
 function Pricing() {
     const plans = [
-        { tier: 'Monthly', amount: '₹999', period: 'per month · billed monthly', eff: 'Full flexibility · cancel anytime', effType: 'neutral', features: ['AI review generation', 'QR card for your counter', 'Google redirect flow', 'Monthly performance report', 'Shop dashboard', 'Cancel anytime'], cta: 'Get started →', featured: false },
-        { tier: '6 Months', amount: '₹5,499', period: 'billed once · ₹917/month', eff: 'Save ₹495', effType: 'neutral', features: ['Everything in Monthly', 'Half a month free', 'One payment, sorted', 'Shop dashboard', 'Priority support', 'Good for steady businesses'], cta: 'Get started →', featured: false },
-        { tier: 'Annual Partner', amount: '₹8,999', period: 'billed once · ₹750/month', eff: 'Save ₹2,989 · 2 months free', effType: 'good', badge: 'Most popular', features: ['Everything in 6 Months', 'Lowest price per month', 'Partner status on dashboard', 'Early access to new features', 'Annual performance review', 'Locked in at best rate'], cta: 'Become a Partner →', featured: true },
+        { tier: 'Monthly', amount: '₹999', period: 'per month · billed monthly', eff: 'Full flexibility · cancel anytime', effType: 'neutral', features: ['AI review generation', 'QR card for your counter', 'Google redirect flow', 'Real-time report', 'Shop dashboard', 'Cancel anytime'], cta: 'Get started →', featured: false },
+        { tier: '6 Months', amount: '₹5,499', period: 'billed once · ₹917/month', eff: 'Save ₹495', effType: 'neutral', features: ['AI review generation', 'QR card for your counter', 'Google redirect flow', 'Real-time report', 'Shop dashboard', 'Good for steady businesses'], cta: 'Get started →', featured: false },
+        { tier: 'Annual Partner', amount: '₹8,999', period: 'billed once · ₹750/month', eff: 'Save ₹2,989 · 2 months free', effType: 'good', badge: 'Most popular', features: ['AI review generation', 'QR card for your counter', 'Google redirect flow', 'Real-time report', 'Shop dashboard', 'Locked in at best rate'], cta: 'Become a Partner →', featured: true },
     ]
     return (
         <div className="pricing-section" id="pricing">
@@ -265,10 +265,10 @@ function Pricing() {
                 <div className="trial-banner reveal">
                     <div>
                         <div className="trial-label">Not sure yet?</div>
-                        <div className="trial-text">Try Honestly for ₹499 — your first month</div>
+                        <div className="trial-text">Try Honestly for ₹499 - your first month</div>
                         <div className="trial-sub">See the results before deciding. No contract.</div>
                     </div>
-                    <a href={`${VENDOR}/signup`} className="trial-btn">Try for ₹499 →</a>
+                    <a href={`${VENDOR}/signup`} className="trial-btn">Try for ₹499 </a>
                 </div>
                 <div className="pricing-grid reveal">
                     {plans.map(p => (
@@ -296,20 +296,22 @@ function Chains() {
                 <div className="chain-left reveal">
                     <div className="chain-eyebrow">Store chains & multi-outlet brands</div>
                     <h2 className="chain-title">Got a<br /><em>store chain?</em></h2>
-                    <p className="chain-desc">Honestly scales with you. Whether you have 3 outlets or 300, every location gets more Google reviews — and you see it all from one place.</p>
+                    <p className="chain-desc">Running multiple locations? Honestly gives you one platform to manage Google reviews across every outlet - so every store builds its rating, consistently.</p>
                     <ul className="chain-features">
-                        {["One dashboard — see every location's performance in one place", "Custom branded UI — the review page looks like your brand, not ours", "Per-location analytics — spot and fix underperforming outlets", "Competitor benchmarking — know exactly where you stand in your market", "One invoice for all locations — no per-outlet paperwork"].map(f => (
+                        {["One dashboard - see every location's performance in one place", "Per-location analytics - spot and fix underperforming outlets", "Pricing scaled to your number of outlets"].map(f => (
                             <li key={f}>
                                 <div className="chain-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg></div>
                                 <span>{f}</span>
                             </li>
                         ))}
                     </ul>
+                    <a href="/contact" className="chain-contact-btn">Talk to us about your chain →</a>
+                    <div className="chain-note">Custom pricing · we'll get back within 24 hours</div>
                 </div>
-                <div className="chain-right reveal">
+                {/* <div className="chain-right reveal">
                     <div className="chain-card">
                         <div className="chain-card-title">Built for store chains</div>
-                        <div className="chain-card-desc">Running multiple locations? Honestly gives you one platform to manage Google reviews across every outlet — so every store builds its rating, consistently.</div>
+                        <div className="chain-card-desc">Running multiple locations? Honestly gives you one platform to manage Google reviews across every outlet - so every store builds its rating, consistently.</div>
                         <ul className="chain-card-features">
                             <li>One dashboard for all locations</li>
                             <li>Per-location Google review tracking</li>
@@ -319,7 +321,7 @@ function Chains() {
                         <a href="/contact" className="chain-contact-btn">Talk to us about your chain →</a>
                         <div className="chain-note">Custom pricing · we'll get back within 24 hours</div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
@@ -327,7 +329,7 @@ function Chains() {
 
 function Testimonials() {
     const t = [
-        { q: '"We went from 38 reviews and a 3.9 rating to 94 reviews and 4.5 in under two months. We didn\'t change anything about the café — just made it easier for happy customers to say so."', i: 'RK', n: 'Rohan K.', b: 'Café · Indiranagar, Bangalore' },
+        { q: '"We went from 38 reviews and a 3.9 rating to 94 reviews and 4.5 in under two months. We didn\'t change anything about the café - just made it easier for happy customers to say so."', i: 'RK', n: 'Rohan K.', b: 'Café · Indiranagar, Bangalore' },
         { q: '"Setup took 5 minutes. Printed the card, put it on the reception desk, forgot about it. The monthly report shows what\'s happening. That\'s genuinely all I do."', i: 'SP', n: 'Sunita P.', b: 'Salon · Koramangala, Bangalore' },
         { q: '"Our Google rating went from 4.0 to 4.6 in 10 weeks. New patients mention seeing our reviews before booking. That\'s directly more business walking through the door."', i: 'AM', n: 'Dr. Ajay M.', b: 'Dental clinic · Whitefield, Bangalore' },
     ]
@@ -354,25 +356,39 @@ function Testimonials() {
 
 function FAQ() {
     const [open, setOpen] = useState(null)
+
     const faqs = [
-        { q: 'Are the reviews actually genuine?', a: "Yes. Every review on Honestly comes from someone who physically visited your business and scanned your QR. The AI helps them articulate what they experienced — it doesn't fabricate experiences. The customer had the visit, had the opinion. We just removed the blank page that was stopping them from sharing it." },
-        { q: 'Will Google penalise AI-assisted reviews?', a: "Google's policy is against fake reviews — reviews from people who didn't have the experience. Honestly only generates reviews for real visits. Using AI to help articulate a genuine experience is no different from a customer using any writing tool. The experience is real. The review is real." },
-        { q: 'How does setup work?', a: "Sign up, add your store, link your Google Review URL. Your QR card is generated instantly — download and print at any local print shop for ₹20. Place it on your counter. Total setup time: under 10 minutes. No technical knowledge required." },
+        { q: 'Are the reviews actually genuine?', a: "Yes. Every review on Honestly comes from someone who physically visited your business and scanned your QR. The AI helps them articulate what they experienced - it doesn't fabricate experiences. The customer had the visit, had the opinion. We just removed the blank page that was stopping them from sharing it." },
+        { q: 'How does setup work?', a: "Sign up, add your store, link your Google Review URL. Your QR card is generated instantly - download and print at any local print shop for ₹20, or we ship you a premium card. Place it on your counter. Total setup time: under 10 minutes. No technical knowledge required." },
         { q: 'Can I add multiple stores?', a: "Yes. Add as many stores as you need under one account. Each store gets its own QR code, its own analytics, and its own review flow. Pricing is per store per month." },
-        { q: 'What is the ₹499 trial?', a: "Your first month on any plan is ₹499 instead of the regular price. A low-risk way to see real results before committing to a longer plan. No contract, no lock-in on monthly." },
-        { q: 'Can I cancel anytime?', a: "Monthly plans can be cancelled at the end of any billing cycle — no questions asked. 6-month and annual plans are billed upfront and non-refundable, but you keep full access until the period ends." },
+        { q: 'What is the ₹499 trial?', a: "Your first month on any plan is ₹499 instead of the regular price. A low-risk way to see real results before committing to a longer plan. No contract, no lock-in on monthly. If you see reviews coming in and your rating moving - you decide what comes next." },
+        { q: 'Can I cancel anytime?', a: "Monthly plans can be cancelled at the end of any billing cycle - no questions asked. 6-month and annual plans are billed upfront and non-refundable, but you keep full access until the period ends." },
         { q: 'Is there a setup fee?', a: "No setup fee for standalone shops. For chain clients requiring custom branded UI and central dashboard setup, there is a one-time onboarding fee depending on scope. Contact us and we'll give you an exact number upfront." },
     ]
+
     return (
         <div className="faq-section" id="faq">
             <div className="container">
-                <div className="section-eyebrow reveal">Questions</div>
-                <h2 className="section-title reveal">Common<br /><em>questions.</em></h2>
+                <div className="section-eyebrow">Questions</div>
+                <h2 className="section-title">
+                    Common<br /><em>questions.</em>
+                </h2>
+
                 <div className="faq-list">
                     {faqs.map((f, i) => (
-                        <div key={i} className={`faq-item reveal${open === i ? ' open' : ''}`} onClick={() => setOpen(open === i ? null : i)}>
-                            <div className="faq-q">{f.q}<span className="faq-icon">{open === i ? '−' : '+'}</span></div>
-                            <div className="faq-a">{f.a}</div>
+                        <div
+                            key={i}
+                            className={`faq-item ${open === i ? 'open' : ''}`}
+                            onClick={() => setOpen(open === i ? null : i)}
+                        >
+                            <div className="faq-q">
+                                {f.q}
+                                <span className="faq-icon">{open === i ? '−' : '+'}</span>
+                            </div>
+
+                            {open === i && (
+                                <div className="faq-a">{f.a}</div>
+                            )}
                         </div>
                     ))}
                 </div>
@@ -389,7 +405,7 @@ function CTA() {
                 <h2 className="cta-title reveal">Your customers<br />are leaving.<br /><em>Without reviewing.</em></h2>
                 <p className="cta-sub reveal">Every visit that doesn't become a review is a missed opportunity. Put a card on your counter today.</p>
                 <div className="cta-actions reveal">
-                    <a href={`${VENDOR}/signup`} className="btn-white">Try for ₹499 →</a>
+                    <a href={`${VENDOR}/signup`} className="btn-white">Try for ₹499 </a>
                     <a href={`${VENDOR}/login`} className="btn-ghost">Already a member? Log in</a>
                 </div>
                 <div className="cta-tagline reveal"><strong>Tell the world,</strong> honestly.</div>

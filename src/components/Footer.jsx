@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="footer-brand">
           <div className="footer-logo">Honestly<em>.</em></div>
           <div className="footer-tagline">Reputation infrastructure for Indian businesses. A QR card on your counter. Real reviews. Real results.</div>
-          <div className="footer-legal">© 2025 Honestly. · Built in Bangalore</div>
+          <div className="footer-legal">© 2026 Honestly.</div>
         </div>
         <div className="footer-col">
           <div className="footer-col-title">Product</div>
